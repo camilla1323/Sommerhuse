@@ -1,0 +1,9 @@
+/myworld 
+
+*.pyc 
+
+__pycache__/ 
+
+# Excude database file 
+
+db.sqlite3 

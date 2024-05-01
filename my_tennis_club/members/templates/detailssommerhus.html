@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  {% extends "master.html" %}
+
+  {% block title %}
+    Details about sommerhus {{ mysommerhus.id }}
+  {% endblock %}
+  
+  {% block content %}
+    <div class="mycard">
+      <h1>Sommerhus {{ mysommerhus.id }}</h1>
+      <p>Adresse: {{ mysommerhus.Adresse }}</p>
+      <p>Ejer ID: {{ mysommerhus.Ejer_id }}</p>
+      <p>Plads til: {{ mysommerhus.Plads_til }} personer</p>
+    </div>
+  {% endblock %}  
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    {% extends "master.html" %}
+
+    {% block content %}
+    <div class="mycard">
+    <h1 style="color: black;">Ejer</h1>
+    <ul>
+      {% for x in myejer %}
+      <li onclick="window.location = 'details/{{ x.id }}'">{{x.id}}|  {{ x.Ejer_navn }} {{ x.Ejer_efternavn }}</li>
+      {% endfor %}
+    </ul>
+
+    </div>
+    {% endblock %}  
+
+</body>
+</html>
