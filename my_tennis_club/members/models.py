@@ -11,7 +11,6 @@ class Member(models.Model):
   
 
 class Ejer(models.Model):
-  # Ejer_ID = models.CharField(max_length=2)
   Ejer_navn = models.CharField(max_length=255)
   Ejer_efternavn = models.CharField(max_length=255)
   Ejer_email = models.CharField(max_length=255)
